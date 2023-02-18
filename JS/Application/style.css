@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Rowdies:wght@700&display=swap');
+
+body {
+  background-image: url("https://media0.giphy.com/media/5wikad3qSOqAg/giphy.gif?cid=ecf05e47rfxesxpoanbxi5s40ii0hqzmgb8tarnqmub68khr&rid=giphy.gif&ct=g");
+
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 0 auto;
+
+}
+
+th,
+td {
+  border: 4px solid #ddd;
+  padding: 8px;
+  text-align: left;
+  font-family: 'Rowdies', cursive;
+
+}
+
+th {
+  background-color: #a3fb28fd;
+  color: white;
+}
+
+/* button {
+  display: flex;
+  
+  font-size: 20px;
+  border: none;
+  transition: background-color 0.3s ease;
+  font-family: 'Luckiest Guy', cursive;
+  cursor: pointer;
+
+
+} */
+#buttons{
+  
+  border: none;
+  transition: background-color 0.3s ease;
+  font-family: 'Luckiest Guy', cursive;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-content: space-between;
+  margin: 50px;
+  
+  color: white;
+}
+
+
+/* button {
+  background-color: #4caf50;
+  color: white;
+  
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+  font-size: 20px;
+  transition: background-color 0.3s ease;
+  font-family: 'Luckiest Guy', cursive;
+} */
+
+ #btn {
+  margin-right: 25px;
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 25px;
+   
+}
+#next-people-btn{
+  margin-left: 25px;
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 20px;
+  display: none;
+  
+}
+#previous-people-btn{
+  font-family: 'Luckiest Guy', cursive;
+  margin-left: 50px;
+  font-size: 20px;
+  display: none;
+  
+}
+#btn2 {
+  font-family: 'Luckiest Guy', cursive;
+  margin-right: 25px;
+  font-size: 20px;
+  
+}
+#next-ships-btn {
+  font-family: 'Luckiest Guy', cursive;
+  margin-right: 30px;
+  font-size:20px;
+  display: none;
+  
+}
+#previous-ships-btn{
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 20px;
+  display: none;
+}
+button:hover {
+  background-color: #00ffeb;
+  cursor: pointer;
+
+}
+
+.tabledata {
+  color: black;
+  
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  font-size: 20px;
+  transition: background-color 0.3s ease;
+  font-family: 'Luckiest Guy', cursive;
+}
+
+button:hover {
+  background-color: #3e8e41;
+ 
+}
+
+/* #next {
+    background-color: #4caf50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  font-size: 20px;
+  transition: background-color 0.3s ease;
+  font-family: 'Luckiest Guy', cursive;
+} */
+
+
+/* 
+@keyframes updown {
+  0%   {top: 110%;}
+50%  {top: 0;}
+ 100%  {top: 110%;}
+}
+
+@keyframes leftright {
+  0%   {left: 0;}
+50%  {left: 80%;}
+ 100%  {left: 0;}
+}
+
+@keyframes vastag {
+  0%   {width: 8vh;}
+50%  {width: 32vh;}
+ 100%  {width: 8vh;}
+}
+
+@keyframes forog {
+100% {transform: rotate(360deg);}
+}
+
+
+body {
+background: radial-gradient(#500, #000);
+margin: 0;
+}
+body::after {
+content: ' ';
+display: block;
+position: absolute;
+background: linear-gradient(rgba(255,255,255,.6), rgba(128,128,255,.3));
+width: 4vh;
+height: 70vh;
+margin-left: -17vh;
+left: 50%;
+bottom: 20vh;
+z-index: 2;
+border-radius: 1vh 1vh 2vh 2vh;
+filter: blur(.5vh);
+transform: skewX(-2deg);
+}
+
+#lamp {
+width: 40vh;
+height: 100vh;
+margin: 0 auto;
+rotate:(90deg);
+}
+#top, #bottom {
+background: #888;
+background: linear-gradient(111deg, #111 0%, #ccc 45%, #ccc 50%, #888 60%, #111);
+}
+#top {
+height: 7vh;
+width: 36vh;
+position: relative;
+top: .5vh;
+left: 2vh;
+border-radius: 12vh 12vh 1vh 1vh/66% 66% 2vh 2vh;
+box-shadow:
+  0 4vh 16vh 16vh rgba(0,0,0,.5),
+  0 1vh 4vh 4vh rgba(0,0,0,.3),
+  inset 0 .5vh .5vh rgba(255,255,255,.5),
+  inset 0 -.3vh .5vh rgba(128,0,0,.5);
+z-index: 2;
+}
+#top::after {
+content: ' ';
+display: block;
+position: absolute;
+background: #fff;
+width: 30vh;
+height: 3vh;
+margin-left: -15vh;
+left: 50%;
+bottom: 4vh;
+z-index: 2;
+border-radius: 48%;
+filter: blur(2vh);
+}
+#bottom {
+height: 3vh;
+border-radius: 1vh;
+box-shadow: 
+  inset 0 -.5vh .5vh rgba(0,0,0,.5),
+  inset 0 .5vh .5vh rgba(128,0,0,.5);
+}
+#bottom::after {
+content: ' ';
+display: block;
+position: absolute;
+background: yellow;
+width: 30vh;
+height: 4vh;
+margin-left: -15vh;
+left: 50%;
+bottom: 5vh;
+z-index: 2;
+border-radius: 48%;
+filter: blur(3vh);
+}
+#glass {
+overflow: hidden;
+width: 100%;
+height: 90vh;
+position: relative;
+top: -4vh;
+transform: perspective(100vh) rotateX(12deg);
+filter: contrast(22);
+background: linear-gradient(blue 30%, #60a 80%, #a06 100%);
+box-shadow: inset 0 -5vh 1vh 1vh rgba(255,0,0,.6), 0 0 2.5px .2px #808;
+border-radius: 1vh 1vh 5vh 5vh/20%;
+}
+.bubble {
+height: 16vh;
+border-radius: 40%;
+background: red;
+position: absolute;
+filter: blur(4vh);
+animation: updown linear 37s infinite,
+  leftright ease-in-out 23s infinite,
+  vastag linear 29s infinite,
+  forog linear 31s infinite;
+}
+.bubble:nth-child(2) {
+animation: updown ease-in 41s infinite,
+  leftright ease-in-out 47s infinite,
+  vastag linear 23s infinite,
+  forog linear 29s infinite;
+}
+.bubble:nth-child(3) {
+animation: updown ease-out 43s infinite,
+  leftright ease-in-out 53s infinite,
+  vastag linear 29s infinite,
+  forog linear 31s infinite;
+}
+.bubble:nth-child(4) {
+animation: updown ease-in-out 47s infinite,
+  leftright ease-in-out 59s infinite,
+  vastag linear 31s infinite,
+  forog linear 41s infinite;
+}
+.bubble:nth-child(5) {
+animation: updown ease-in-out 29s infinite,
+  leftright ease-in-out 31s infinite,
+  vastag linear 37s infinite,
+  forog linear 47s infinite;
+}
+.bubble:last-child {
+animation: updown linear 53s infinite,
+  leftright ease-in-out 29s infinite,
+  vastag linear 19s infinite,
+  forog linear 37s infinite;
+} */
